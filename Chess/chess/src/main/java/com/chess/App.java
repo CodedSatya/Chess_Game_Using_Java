@@ -1,9 +1,8 @@
 package com.chess;
 
-import com.functions.Functions;
-/**
- * Hello world!
- */
+// import com.functions.Functions;
+
+// import com.Warriors.*;
 public final class App {
     private App() {
     }
@@ -13,12 +12,13 @@ public final class App {
      * @param args The arguments of the program.
      */
     public static void main(String[] args) {
-        
-        // System.out.println("Hello World!");
 
         // Functions f = new Functions();
         Board b = new Board();
         b.createBoard();
+
+        b.setBoard_White();
+        b.setBoard_Black();
     
     }
 }
