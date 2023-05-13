@@ -11,6 +11,7 @@ public final class App {
     public static void main(String[] args) {
 
         // Functions f = new Functions();
-    
+        Board b = new Board();
+        b.createBoard();
     }
 }
