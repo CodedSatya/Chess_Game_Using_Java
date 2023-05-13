@@ -25,7 +25,58 @@ public final class App {
      public static LinkedList<Piece> pieces = new LinkedList<Piece>();
 
      public static Piece selectedPiece = null;
+    
+     // White pieces
+        // White king
 
+        public static Piece wking = new Piece(4, 7, "king", true, pieces);
+        // White queen
+        public static Piece wqueen = new Piece(3, 7, "queen", true, pieces);
+        // White bishops
+        public static Piece wbishop1 = new Piece(2, 7, "bishop", true, pieces);
+        public static Piece wbishop2 = new Piece(5, 7, "bishop", true, pieces);
+        // White knights
+        public static Piece wknight1 = new Piece(1, 7, "knight", true, pieces);
+        public static Piece wknight2 = new Piece(6, 7, "knight", true, pieces);
+        // White rooks
+        public static Piece wrook1 = new Piece(0, 7, "rook", true, pieces);
+        public static Piece wrook2 = new Piece(7, 7, "rook", true, pieces);
+
+        // White pawns
+        public static Piece wpawn1 = new Piece(0, 6, "pawn", true, pieces);
+        public static Piece wpawn2 = new Piece(1, 6, "pawn", true, pieces);
+        public static Piece wpawn3 = new Piece(2, 6, "pawn", true, pieces);
+        public static Piece wpawn4 = new Piece(3, 6, "pawn", true, pieces);
+        public static Piece wpawn5 = new Piece(4, 6, "pawn", true, pieces);
+        public static Piece wpawn6 = new Piece(5, 6, "pawn", true, pieces);
+        public static Piece wpawn7 = new Piece(6, 6, "pawn", true, pieces);
+        public static Piece wpawn8 = new Piece(7, 6, "pawn", true, pieces);
+
+        // Black pieces
+
+        // Black king
+        public static Piece bking = new Piece(4, 0, "king", false, pieces);
+        // Black queen
+        public static Piece bqueen = new Piece(3, 0, "queen", false, pieces);
+        // Black bishops
+        public static Piece bbishop1 = new Piece(2, 0, "bishop", false, pieces);
+        public static Piece bbishop2 = new Piece(5, 0, "bishop", false, pieces);
+        // Black knights
+        public static Piece bknight1 = new Piece(1, 0, "knight", false, pieces);
+        public static Piece bknight2 = new Piece(6, 0, "knight", false, pieces);
+        // Black rooks
+        public static Piece brook1 = new Piece(0, 0, "rook", false, pieces);
+        public static Piece brook2 = new Piece(7, 0, "rook", false, pieces);
+
+        // Black pawns
+        public static Piece bpawn1 = new Piece(0, 1, "pawn", false, pieces);
+        public static Piece bpawn2 = new Piece(1, 1, "pawn", false, pieces);
+        public static Piece bpawn3 = new Piece(2, 1, "pawn", false, pieces);
+        public static Piece bpawn4 = new Piece(3, 1, "pawn", false, pieces);
+        public static Piece bpawn5 = new Piece(4, 1, "pawn", false, pieces);
+        public static Piece bpawn6 = new Piece(5, 1, "pawn", false, pieces);
+        public static Piece bpawn7 = new Piece(6, 1, "pawn", false, pieces);
+        public static Piece bpawn8 = new Piece(7, 1, "pawn", false, pieces);
 
     public static void main(String[] args) throws IOException {
 
@@ -44,57 +95,7 @@ public final class App {
                 x++;
             }
         }
-        // White pieces
-        // White king
-
-        Piece wking = new Piece(4, 7, "king", true, pieces);
-        // White queen
-        Piece wqueen = new Piece(3, 7, "queen", true, pieces);
-        // White bishops
-        Piece wbishop1 = new Piece(2, 7, "bishop", true, pieces);
-        Piece wbishop2 = new Piece(5, 7, "bishop", true, pieces);
-        // White knights
-        Piece wknight1 = new Piece(1, 7, "knight", true, pieces);
-        Piece wknight2 = new Piece(6, 7, "knight", true, pieces);
-        // White rooks
-        Piece wrook1 = new Piece(0, 7, "rook", true, pieces);
-        Piece wrook2 = new Piece(7, 7, "rook", true, pieces);
-
-        // White pawns
-        Piece wpawn1 = new Piece(0, 6, "pawn", true, pieces);
-        Piece wpawn2 = new Piece(1, 6, "pawn", true, pieces);
-        Piece wpawn3 = new Piece(2, 6, "pawn", true, pieces);
-        Piece wpawn4 = new Piece(3, 6, "pawn", true, pieces);
-        Piece wpawn5 = new Piece(4, 6, "pawn", true, pieces);
-        Piece wpawn6 = new Piece(5, 6, "pawn", true, pieces);
-        Piece wpawn7 = new Piece(6, 6, "pawn", true, pieces);
-        Piece wpawn8 = new Piece(7, 6, "pawn", true, pieces);
-
-        // Black pieces
-
-        // Black king
-        Piece bking = new Piece(4, 0, "king", false, pieces);
-        // Black queen
-        Piece bqueen = new Piece(3, 0, "queen", false, pieces);
-        // Black bishops
-        Piece bbishop1 = new Piece(2, 0, "bishop", false, pieces);
-        Piece bbishop2 = new Piece(5, 0, "bishop", false, pieces);
-        // Black knights
-        Piece bknight1 = new Piece(1, 0, "knight", false, pieces);
-        Piece bknight2 = new Piece(6, 0, "knight", false, pieces);
-        // Black rooks
-        Piece brook1 = new Piece(0, 0, "rook", false, pieces);
-        Piece brook2 = new Piece(7, 0, "rook", false, pieces);
-
-        // Black pawns
-        Piece bpawn1 = new Piece(0, 1, "pawn", false, pieces);
-        Piece bpawn2 = new Piece(1, 1, "pawn", false, pieces);
-        Piece bpawn3 = new Piece(2, 1, "pawn", false, pieces);
-        Piece bpawn4 = new Piece(3, 1, "pawn", false, pieces);
-        Piece bpawn5 = new Piece(4, 1, "pawn", false, pieces);
-        Piece bpawn6 = new Piece(5, 1, "pawn", false, pieces);
-        Piece bpawn7 = new Piece(6, 1, "pawn", false, pieces);
-        Piece bpawn8 = new Piece(7, 1, "pawn", false, pieces);
+        
 
         f = new JFrame("Chess");
         f.setBounds(10, 10, 512, 512);
@@ -163,6 +164,19 @@ public final class App {
             }
 
             public void mouseReleased(MouseEvent e) {
+                if(selectedPiece.name == "pawn"){
+                    if(selectedPiece.isWhite){
+                        if(selectedPiece.y == 0){
+                            selectedPiece.name = "queen";
+                        }
+                    }else{
+                        if(selectedPiece.y == 7){
+                            selectedPiece.name = "queen";
+                        }
+                    }
+                }
+
+                
                 selectedPiece.move(e.getX()/64, e.getY()/64);
                 f.repaint();
 
@@ -208,4 +222,18 @@ public final class App {
         }
         return null;
     } 
+
+    public static void checkWin(){
+        // Winning condition
+        if(pieces.contains(wking)&&!pieces.contains(bking)){
+            JOptionPane.showMessageDialog(null, "White wins!");
+            System.exit(0);
+        }
+        else{
+            if(pieces.contains(bking)&&!pieces.contains(wking)){
+                JOptionPane.showMessageDialog(null, "Black wins!");
+                System.exit(0);
+            }
+        }
+    }
 }

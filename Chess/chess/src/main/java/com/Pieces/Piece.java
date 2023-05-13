@@ -41,12 +41,17 @@ public class Piece {
       }
     }
 
+
+    App.checkWin();
+
     this.xp = xp;
     this.yp = yp;
     x=xp*64;
     y=yp*64;
 
   }
+
+
 
   public void kill(){
     ps.remove(this);
